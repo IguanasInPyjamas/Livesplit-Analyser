@@ -1,1 +1,1 @@
-from livesplit_analyser import gui
+from livesplit_analyser import ScrollLabel, SplitResult, gui
