@@ -5,7 +5,7 @@ import io
 with open('README.md', 'r') as f:
     long_description = f.read()
 
-with io.open('Livesplit-Analyser/__version__.py', 'rt', encoding='utf8') as f:
+with io.open('livesplit_analyser/__version__.py', 'rt', encoding='utf8') as f:
     version = re.search(r'__version__ = \'(.*?)\'', f.read()).group(1)
 
 
@@ -28,6 +28,6 @@ setup(
     long_description_content_type='text/markdown',
     entry_points='''
         [console_scripts]
-        livesplit-analyser=gui:main
+        livesplit-analyse=livesplit_analyser.gui:main
     '''
 )
