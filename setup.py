@@ -28,6 +28,6 @@ setup(
     long_description_content_type='text/markdown',
     entry_points='''
         [console_scripts]
-        anime=anime_downloader.cli:main
+        livesplit-analyser=gui:main
     '''
 )
