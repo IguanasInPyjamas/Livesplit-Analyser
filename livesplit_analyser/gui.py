@@ -205,9 +205,7 @@ class Window(QMainWindow):
                              \n \n \n'''
             return formatString
 
-if __name__ == "__main__":
+def main():
     application = QApplication(sys.argv)
     GUI = Window()
-    sys.exit(application.exec_())
-        
-        
+    sys.exit(application.exec_()) 
