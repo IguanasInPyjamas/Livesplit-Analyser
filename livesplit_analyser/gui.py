@@ -6,8 +6,8 @@ from PyQt5.QtGui import *
 from PyQt5.QtCore import * 
 import sys 
 import inspect
-from ScrollLabel import *
-from SplitResult import *
+from livesplit_analyser.ScrollLabel import *
+from livesplit_analyser.SplitResult import *
 
 class Worker(QThread):
     #Worker to run commands on another thread, allowing the GUI not to lock up. Theoretically, any function should be able to be passed to this Worker.
@@ -79,7 +79,7 @@ class Window(QMainWindow):
     
         self.label = ScrollLabel()
         
-        self.label.setText("Kill me")
+        self.label.setText("No output")
         layout.addWidget(self.label)
         
         self.setCentralWidget(central_widget)
