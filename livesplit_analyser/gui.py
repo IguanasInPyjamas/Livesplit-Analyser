@@ -164,7 +164,7 @@ class Window(QMainWindow):
                     
     def formatResultAtIndex(self,index):
         
-        if str(type(index))=="<class 'SplitResult.StatisticsResult'>":
+        if str(type(index))=="<class 'livesplit_analyser.SplitResult.StatisticsResult'>":
             name = index.segmentName
             segbest = index.segmentBest
             segworst = index.segmentWorst
