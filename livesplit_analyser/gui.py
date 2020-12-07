@@ -160,7 +160,7 @@ class Window(QMainWindow):
                     self.label.setText(str(self.d[meth]()[index]))
                 
                 else:
-                    self.d[meth](self.Analyser.getSegments()[-2].runHistory)
+                    self.d[meth](self.Analyser.getSegments()[index].runHistory)
                     
     def formatResultAtIndex(self,index):
         
