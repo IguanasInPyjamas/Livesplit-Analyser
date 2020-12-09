@@ -123,6 +123,7 @@ class Window(QMainWindow):
             }
         
         self.options.clear()
+        self.methods.clear()
         self.segments = self.Analyser.getSegments()
         self.options.addItem('All')
         for s in self.segments:
